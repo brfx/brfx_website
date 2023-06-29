@@ -1,0 +1,170 @@
+/************************************************* 
+ * Import fonts from Google
+ *
+ */
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif');
+
+
+
+/************************************************* 
+ * Main rules
+ *
+ */
+
+div.mast {
+/*    min-height: 225px;
+    position: relative;
+    margin-bottom: 50px;
+    background-color: #9ABBE3; */
+}
+div.top {
+    float: left;
+/*  background-color: #2ABBE3;  */
+}
+div.portrait {
+    float: left;
+    margin-left: 15px;
+}
+
+
+body {
+    font-family: "PT Serif", "serif", serif;
+    color: gray;
+}
+
+
+div.body-container {
+}
+
+
+div.main {
+/*    margin-top: 50px;  */
+    clear: both;
+}
+
+div.footer {
+    background-color: #d7e0de; /* greenish grey */    
+/*    color: white; */
+    font-size: 0.7em;
+    padding: 5px;
+    margin-top: 30px;
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+div.section {
+    background-color: #d5f2d6; /* greenish grey */
+    padding: 10px;
+    margin: 20px 0px 5px 0px;
+    border-radius: 5px;
+}
+
+div.subtitle {
+    color: black;
+    font-size: 1.3em;
+    padding: 10px;
+    margin: 5px 0px 20px 0px;
+    font-weight: normal;
+    font-family: "PT Sans", "sans serif", sans-serif, sans; 
+}
+
+h1, h2, h3 {
+    margin: 10px 0px 10px 0px;
+    padding: 5px 0px 0px 5px;
+    font-weight: normal;
+    font-family: "PT Sans", "sans serif", sans-serif, sans; 
+}
+h1, h2 {
+    color: #3c486b; /* muted blue grey */
+}
+h1 {
+    font-size: 4.0em;
+    font-weight: medium;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    color: black;
+    margin: 20px 0px 10px 0px;
+    padding: 0px 5px 0px 15px;
+}
+
+p {
+    margin: 0px 0px 15px 0px;
+    padding: 0px 5px 0px 15px;
+}
+
+
+img {
+    border-width: 0px;
+    border-radius: 0px;
+}
+
+
+a:link {
+   text-decoration: none;
+   color: #4772b7; 
+}
+a:visited {
+   color: #6347b7;
+}
+a:focus {
+   text-decoration: underline;
+}
+
+h1 a:link,  h1 a:visited {
+   color: inherit;
+   text-decoration: inherit;
+}
+
+
+/************************************************* 
+ * Generic formatting classes 
+ */
+
+.bold {
+    font-weight: 700; 
+}
+
+.italic {
+    font-style: italic;
+}
+
+
+/************************************************* 
+ * print-only rules
+ *
+ */
+@media print {
+    
+.no-print, .no-print * {
+   display: none !important;
+}
+
+}
+
+
+/************************************************* 
+ * Screen-only rules
+ *
+ */
+@media only screen
+and (min-device-width : 768px) {
+
+div.body-container {
+    min-width: 500px;
+    max-width: 900px;
+    /* center the container by setting left and right margins to auto */
+    margin: 0 auto 0 auto;
+}
+
+div.portrait {
+    float: right;
+    margin-bottom: 20px;
+}
+
+}
+
+
+
